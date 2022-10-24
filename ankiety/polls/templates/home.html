@@ -1,0 +1,8 @@
+<h1>Główna strona</h1>
+{{ user.is_authenticated}}
+{% if user.is_authenticated %}
+    <p>Witaj{{user}}</p>
+    <a href="polls">Ankiety</a>
+{% else %}
+    <p>Zaloguj sie</p>
+{% endif %}
